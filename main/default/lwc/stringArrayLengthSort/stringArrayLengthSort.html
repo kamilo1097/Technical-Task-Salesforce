@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-grid">
+
+            <div class="slds-col">
+                LWC Sort
+                <template for:each={outputArrayLWC} for:item="item">
+                    <div key={item}>
+                        {item}
+                    </div>
+                </template>
+            </div>
+            <div class="slds-col">
+                Apex sort
+                <template for:each={outputArrayApex} for:item="item">
+                    <div key={item}>
+                        {item}
+                    </div>
+                </template>
+            </div>
+        </div>
+        
+
+    </div>
+</template>
